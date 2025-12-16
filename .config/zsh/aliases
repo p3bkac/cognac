@@ -1,0 +1,25 @@
+# one letters
+alias v="nvim"
+alias o="xdg-open"
+alias g="git"
+alias l="ls -lah --color=auto"
+
+# colors
+alias ls="ls --color=auto -hv"
+alias grep="grep --color=auto"
+alias diff="diff --color=auto"
+alias ip="ip -c=auto"
+
+# confirmations
+alias mv="mv -i"
+alias cp="cp -i"
+alias df="df -h"
+
+# personal
+alias exifstrip="exiftool -all="
+alias decrypt-msg="vim msg.tmp && gpg -d msg.tmp shred -u msg.tmp"
+alias mvstat="mullvad status -v"
+alias mvcon="mullvad connect"
+alias mvdisc="mullvad disconnect"
+alias mvres="mullvad reconnect"
+

@@ -1,0 +1,24 @@
+. ~/.config/zsh/aliases
+. ~/.config/zsh/exports
+
+PS1='%F{blue}%B%~%b%f %F{green}❯%f '
+
+HISTFILE=~/.history
+HISTSIZE=100000
+SAVEHIST=100000
+
+setopt inc_append_history
+
+# case insensitive tab-completion
+autoload -Uz compinit && compinit
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
+
+# plugins
+source ~/.config/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+bindkey -e
+bindkey "\e[A" history-beginning-search-backward
+bindkey "\e[B" history-beginning-search-forward
+
+precmd () { print -Pn "\e]2;%-3~\a"; }
+
