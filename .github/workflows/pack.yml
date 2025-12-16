@@ -16,7 +16,7 @@ jobs:
       - name: Create tarball
         run: |
           mkdir -p /tmp/release
-          tar -czf /tmp/release/release.tar.gz --exclude='README.md' .
+          tar -czf /tmp/release/release.tar.gz --exclude="README.md" --exclude=".git" --exclude ".github" .
           mv /tmp/release/release.tar.gz .
       
       - name: Create release
