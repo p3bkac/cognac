@@ -13,7 +13,7 @@ setopt inc_append_history
 autoload -Uz compinit && compinit
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 
-# plugins
+# plugins (`git clone https://github.com/zsh-users/zsh-autosuggestions zsh-autosuggestions`)
 source ~/.config/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 bindkey -e

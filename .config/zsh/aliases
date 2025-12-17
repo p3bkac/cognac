@@ -22,4 +22,6 @@ alias mvstat="mullvad status -v"
 alias mvcon="mullvad connect"
 alias mvdisc="mullvad disconnect"
 alias mvres="mullvad reconnect"
+alias getipv4="curl -4 https://ip.antti.codes/"
+alias getipv6="curl -6 https://ip.antti.codes/"
 
