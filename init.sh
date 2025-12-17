@@ -5,7 +5,7 @@
 
 ##  direct apt pkgs  ##
 sudo apt update && sudo apt upgrade -y
-sudo apt install git zsh kitty tree sxiv python3 python3-pip keepassxc gpg
+sudo apt install git zsh kitty tree sxiv python3 python3-pip keepassxc gpg scdaemon redshift redshift-gtk
 
 ##  mullvad (https://mullvad.net/en/download/vpn/linux)  ##
 sudo curl -fsSLo /usr/share/keyrings/mullvad-keyring.asc https://repository.mullvad.net/deb/mullvad-keyring.asc
